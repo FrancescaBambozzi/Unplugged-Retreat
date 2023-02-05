@@ -14,16 +14,12 @@ html {
   text-shadow: none;
 }
 
-hr {
-  display: block;
-  height: 1px;
-  border: 0;
-  border-top: 1px solid #ccc;
-  margin: 1em 0;
-  padding: 0;
-}
-
-audio, canvas, iframe, img, svg, video {
+audio,
+canvas,
+iframe,
+img,
+svg,
+video {
   vertical-align: middle;
 }
 
@@ -38,9 +34,9 @@ textarea {
 }
 
 .browserupgrade {
-  margin: 0.2em 0;
   background: #ccc;
   color: #000;
+  margin: 0.2em 0;
   padding: 0.2em 0;
 }
 
@@ -49,39 +45,43 @@ textarea {
    ========================================================================== */
 
 body {
-  margin: 0 auto;
-  Font-Family: 'Muli', Sans-Serif;
   color: #fff;
+  font-family: "Muli", Sans-Serif;
+  margin: 0 auto;
 }
 
 .section-container {
+  align-items: center;
   display: flex;
   flex-flow: column wrap;
   justify-content: center;
-  align-items: center;
 }
 
 .section-container p {
-  max-width: 750px;
+  max-width: 760px;
 }
 
+/* TYPOGRAPHY */
 h1 {
-  Font-Family: 'Merriweather', Serif;
-  Font-Size: 30px;
+  font-family: "Merriweather", Serif;
+  font-size: 30px;
 }
 
-h2, h3, h4 {
-  Font-Family: 'Merriweather', Serif;
+h2,
+h3,
+h4 {
+  font-family: "Merriweather", Serif;
 }
 
 ul li {
+  list-style: none;
   text-decoration: none;
-  list-style: none
 }
 
+/* HEADER */
 header {
   background-color: #181818;
-  background-image: url('../img/rob-mulally-oacHEtIlXsA-unsplash.jpg');
+  background-image: url("../img/rob-mulally-oacHEtIlXsA-unsplash.jpg");
   background-size: cover;
   background-position: center;
   height: "100%";
@@ -93,13 +93,13 @@ header {
 }
 
 #logo {
-  width: 50px;
   height: 50px;
+  width: 50px;
 }
 
 .nav {
-  overflow: hidden;
   background-color: #181818;
+  overflow: hidden;
   position: sticky;
   position: -webkit-sticky;
   top: 0;
@@ -107,14 +107,13 @@ header {
 
 /* Style the navigation bar links */
 .nav a {
-  float: left;
   display: block;
   color: white;
-  text-align: center;
+  float: left;
   padding: 14px 20px;
+  text-align: center;
   text-decoration: none;
 }
-
 
 /* Right-aligned link */
 .nav a.right {
@@ -133,20 +132,127 @@ header {
   color: white;
 }
 
-footer {
-  background-color: #181818;
-  padding: 15px;
+/* HOMEPAGE STYLE */
+.hero {
+  height: 400px;
+  position: relative;
+}
+
+.hero img {
+  height: 100%;
+  width: 100%;
+}
+
+.hero h1 {
+  color: #fff;
+  left: 15px;
+  position: absolute;
+  text-shadow: 4px 3px #181818;
+}
+
+.home-main {
+  align-items: center;
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: flex-start;
+}
+
+.newsletter {
+  background-color: #3d6218;
+  padding: 0 15px;
+  text-align: center;
+  width: 100%;
+}
+
+.email form {
   display: flex;
   flex-flow: row wrap;
   justify-content: center;
+}
+
+.email form input {
+  margin-bottom: 20px;
+  padding: 10px;
+  width: 250px;
+}
+
+.email form button {
+  background-color: rgba(0, 100, 0, 0.9);
+  border: none;
+  box-shadow: 1px 1px #181818;
+  color: #fff;
+  margin-bottom: 40px;
+  padding: 10px;
+  text-transform: uppercase;
+  width: 275px;
+}
+
+.information {
+  background-color: #181818;
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: center;
+  padding: 15px;
+}
+
+.info-item {
   align-items: center;
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: center;
+  padding: 30px;
+}
+
+.previous {
+  background-color: #3d6218;
+  padding: 15px;
+  width: 100%;
+}
+
+.team-pic {
+  display: block;
+  height: 200px;
+  width: 300px;
+}
+
+.previous img {
+  height: 100%;
+  width: 100%;
+}
+
+/* ABOUT PAGE STYLE */
+.mission,
+.about-information {
+  background-color: #3d6218;
+  padding: 15px;
+}
+
+.about-information a {
+  color: #fff;
+  text-decoration: none;
+}
+
+/* FAQS */
+.questions {
+  background-color: #3d6218;
+  padding: 15px;
+}
+
+/* FOOTER */
+footer {
+  align-items: center;
+  background-color: #181818;
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: center;
+  padding: 15px;
 }
 
 .contact {
+  align-items: center;
   display: flex;
   flex-flow: row wrap;
   justify-content: center;
-  align-items: center;
 }
 
 footer h4 {
@@ -154,8 +260,8 @@ footer h4 {
 }
 
 .contact img {
-  width: 30px;
   height: 30px;
+  width: 30px;
 }
 
 .contact ul li {
@@ -187,142 +293,32 @@ footer h4 {
   padding: 10px;
 }
 
-/* HOMEPAGE STYLE */
-
-.hero {
-  position: relative;
-  height: 400px;
-}
-
-.hero img {
-  width: 100%;
-  height: 100%;
-}
-
-.hero h1 {
-  position: absolute;
-  left: 15px;
-  color: #fff;
-  text-shadow: 4px 3px #181818;
-}
-
-.home-main {
-  display: flex;
-  justify-content: flex-start;
-  align-items: center;
-  flex-flow: row wrap;
-}
-
-.newsletter {
-  background-color: #3d6218;
-  padding: 0 15px;
-  width: 100%;
-  text-align: center;
-}
-
-.email form {
-  display: flex;
-  flex-flow: row wrap;
-  justify-content: center;
-  align-items: center;
-}
-
-.email form input {
-  width: 250px;
-  margin-bottom: 20px;
-  padding: 10px;
-}
-
-.email form button {
-  width: 275px;
-  padding: 10px;
-  text-transform: uppercase;
-  color: #fff;
-  background-color: rgba(0, 100, 0, 0.9);
-  border: none;
-  box-shadow: 1px 1px #181818;
-  margin-bottom: 40px;
-}
-
-.information {
-  padding: 15px;
-  display: flex;
-  flex-flow: row wrap;
-  justify-content: center;
-  align-items: center;
-  background-color: #181818;
-}
-
-.info-item {
-  padding: 30px;
-  display: flex;
-  flex-flow: row wrap;
-  justify-content: center;
-  align-items: center;
-}
-
-.previous {
-  background-color: #3d6218;
-  padding: 15px;
-  width: 100%;
-}
-
-.team-pic {
-  display: block;
-  height: 200px;
-  width: 300px;
-}
-
-.previous img {
-  height: 100%;
-  width: 100%;
-}
-
-/* ABOUT PAGE STYLE */
-.mission, .about-information {
-  background-color: #3d6218;
-  padding: 15px;
-}
-
-.about-information a {
-  text-decoration: none;
-  color: #fff;
-}
-
-/* FAQS */
-.questions {
-  background-color: #3d6218;
-  padding: 15px;
-}
-
 /* ==========================================================================
-   EXAMPLE Media Queries for Responsive Design.
-   These examples override the primary ('mobile first') styles.
-   Modify as content requires.
+            TABLETS & DESKTOP LAYOUT
    ========================================================================== */
 
 @media only screen and (min-width: 35rem) {
   footer {
+    align-items: center;
     display: flex;
     flex-flow: column wrap;
     justify-content: center;
-    align-items: center;
   }
 
   .email form {
+    align-items: center;
     display: flex;
     flex-flow: column wrap;
     justify-content: center;
-    align-items: center;
   }
 
   .information {
-    padding: 15px;
+    align-items: center;
+    background-color: #181818;
     display: flex;
     flex-flow: column wrap;
     justify-content: center;
-    align-items: center;
-    background-color: #181818;
+    padding: 15px;
     width: 100%;
   }
 
@@ -332,20 +328,20 @@ footer h4 {
 
   .previous {
     background-color: #3d6218;
-    padding: 15px;
+    align-items: center;
     display: flex;
     flex-flow: column nowrap;
     justify-content: center;
-    align-items: center;
+    padding: 15px;
   }
-  .about-information{
+
+  .about-information {
     text-align: center;
   }
+
   .info-container {
     display: flex;
     flex-flow: row nowrap;
-    /* justify-content: flex-start;
-    align-items: flex-start; */
   }
 
   .location {
