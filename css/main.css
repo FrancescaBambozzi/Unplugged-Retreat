@@ -55,6 +55,7 @@ body {
   display: flex;
   flex-flow: column wrap;
   justify-content: center;
+  padding: 60px 0;
 }
 
 .section-container p {
@@ -80,7 +81,7 @@ ul li {
 
 /* HEADER */
 header {
-  background-color: #181818;
+  background-color: rgba(0, 0, 0, 0.9);
   background-image: url("../img/rob-mulally-oacHEtIlXsA-unsplash.jpg");
   background-size: cover;
   background-position: center;
@@ -159,7 +160,6 @@ header {
 
 .newsletter {
   background-color: #3d6218;
-  padding: 0 15px;
   text-align: center;
   width: 100%;
 }
@@ -188,11 +188,13 @@ header {
 }
 
 .information {
-  background-color: #181818;
+  background-image: url("../assets/unplugged-retreat-features.jpg");
+  background-size: cover;
+  background-position: center;
+  height: "100%";
   display: flex;
   flex-flow: row wrap;
   justify-content: center;
-  padding: 15px;
 }
 
 .info-item {
@@ -205,7 +207,6 @@ header {
 
 .previous {
   background-color: #3d6218;
-  padding: 15px;
   width: 100%;
 }
 
@@ -224,7 +225,6 @@ header {
 .mission,
 .about-information {
   background-color: #3d6218;
-  padding: 15px;
 }
 
 .about-information a {
@@ -235,7 +235,6 @@ header {
 /* FAQS */
 .questions {
   background-color: #3d6218;
-  padding: 15px;
 }
 
 /* FOOTER */
@@ -245,7 +244,6 @@ footer {
   display: flex;
   flex-flow: row wrap;
   justify-content: center;
-  padding: 15px;
 }
 
 .contact {
@@ -297,7 +295,12 @@ footer h4 {
             TABLETS & DESKTOP LAYOUT
    ========================================================================== */
 
-@media only screen and (min-width: 35rem) {
+@media only screen and (min-width: 1050px) {
+
+  .section-container {
+    padding: 60px 0;
+  }
+
   footer {
     align-items: center;
     display: flex;
@@ -314,16 +317,34 @@ footer h4 {
 
   .information {
     align-items: center;
-    background-color: #181818;
+    background-color: #000;
     display: flex;
     flex-flow: column wrap;
     justify-content: center;
-    padding: 15px;
     width: 100%;
   }
 
+  .info-items-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-flow: row wrap;
+    width: 100%;
+  }
+
+  .info-item {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-flow: column wrap;
+    margin: 50px 0;
+    padding: 10px;
+    width: 25%;
+  }
+
   .info-item p {
-    padding-left: 20px;
+    width: 250px;
+    text-align: justify;
   }
 
   .previous {
@@ -332,7 +353,6 @@ footer h4 {
     display: flex;
     flex-flow: column nowrap;
     justify-content: center;
-    padding: 15px;
   }
 
   .about-information {
@@ -341,14 +361,14 @@ footer h4 {
 
   .info-container {
     display: flex;
-    flex-flow: row nowrap;
+    flex-flow: column nowrap;
   }
 
   .location {
-    width: 50%;
+    width: 100%;
   }
 
   .about-information {
-    width: 50%;
+    width: 100%;
   }
 }
