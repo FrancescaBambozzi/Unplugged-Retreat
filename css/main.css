@@ -88,8 +88,15 @@ h3 {
 }
 
 ul li {
+  font-family: "Open Sans", sans-serif;
+  font-size: 18px;
   list-style: none;
   text-decoration: none;
+}
+
+p {
+  font-family: "Open Sans", sans-serif;
+  font-size: 18px;
 }
 
 /* HEADER */
@@ -189,6 +196,7 @@ header {
 }
 
 .information {
+  align-items: center;
   background-image: url("../assets/unplugged-retreat-features.jpg");
   background-size: cover;
   background-position: center;
@@ -196,14 +204,24 @@ header {
   display: flex;
   flex-flow: row wrap;
   justify-content: center;
+  width: 100%;
+}
+
+.info-items-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-flow: row wrap;
 }
 
 .info-item {
   align-items: center;
   display: flex;
-  flex-flow: row wrap;
+  flex-basis: 50%;
+  flex-flow: column wrap;
   justify-content: center;
-  padding: 30px;
+  width: 63%;
+  margin: 30px 0;
 }
 
 .previous {
@@ -296,16 +314,25 @@ footer h4 {
             TABLETS & DESKTOP LAYOUT
    ========================================================================== */
 
-@media only screen and (min-width: 1050px) {
+@media only screen and (min-width: 760px) {
   .section-container {
     padding: 60px 0;
   }
 
-  footer {
+  .content-wrapper {
+    max-width: 960px;
     align-items: center;
     display: flex;
-    flex-flow: column wrap;
-    justify-content: center;
+    flex-flow: row wrap;
+    justify-content: space-around;
+  }
+
+  .newsletter-div {
+    width: 30%;
+  }
+
+  .text-content {
+    text-align: left;
   }
 
   .email form {
@@ -315,31 +342,8 @@ footer h4 {
     justify-content: center;
   }
 
-  .information {
-    align-items: center;
-    background-color: #000;
-    display: flex;
-    flex-flow: column wrap;
-    justify-content: center;
-    width: 100%;
-  }
-
-  .info-items-container {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    flex-flow: row wrap;
-    width: 100%;
-  }
-
   .info-item {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    flex-flow: column wrap;
-    margin: 50px 0;
-    padding: 10px;
-    width: 25%;
+    flex-basis: 33%;
   }
 
   .info-item p {
@@ -370,5 +374,12 @@ footer h4 {
 
   .about-information {
     width: 100%;
+  }
+
+  footer {
+    align-items: center;
+    display: flex;
+    flex-flow: column wrap;
+    justify-content: center;
   }
 }
