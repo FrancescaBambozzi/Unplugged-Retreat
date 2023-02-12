@@ -102,12 +102,8 @@ ul li {
 }
 
 p {
-<<<<<<< HEAD
   font-family: "Open Sans", sans-serif;
   font-size: 18px;
-=======
-  font-size: 1.25em;
->>>>>>> f222b3f (css changes)
 }
 
 /* HEADER */
@@ -325,11 +321,7 @@ footer h4 {
             TABLETS & DESKTOP LAYOUT
    ========================================================================== */
 
-<<<<<<< HEAD
 @media only screen and (min-width: 760px) {
-=======
-@media only screen and (min-width: 768px) {
->>>>>>> f222b3f (css changes)
   .section-container {
     padding: 60px 15px;
   }
@@ -378,26 +370,6 @@ footer h4 {
     justify-content: center;
   }
 
-<<<<<<< HEAD
-=======
-  .information {
-    align-items: center;
-    background-color: #000;
-    display: flex;
-    flex-flow: column wrap;
-    justify-content: center;
-    width: 100%;
-  }
-
-  .info-items-container {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    flex-flow: row wrap;
-    width: 60%;
-  }
-
->>>>>>> f222b3f (css changes)
   .info-item {
     flex-basis: 33%;
   }
@@ -453,31 +425,10 @@ footer h4 {
     width: 100%;
   }
 
-<<<<<<< HEAD
   footer {
     align-items: center;
     display: flex;
     flex-flow: column wrap;
     justify-content: center;
-=======
-  .contact-section {
-    background-color: #3d6218;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    flex-flow: row wrap;
-    padding: 60px 0;
-  }
-
-  .contact-section h2 {
-    width: 70%;
-  }
-
-  .contact-content {
-    display: flex;
-    justify-content: space-around;
-    align-items: flex-start;
-    width: 70%;
->>>>>>> f222b3f (css changes)
   }
 }
