@@ -74,10 +74,9 @@ h1 {
 
 h2 {
   font-family: "Poppins", sans-serif;
-  font-size: 3em;
+  font-size: 30px;
   font-weight: 500;
-  line-height: 1.333;
-  width: 95%;
+  line-height: 1.33;
 }
 
 h3 {
@@ -89,8 +88,9 @@ h3 {
 }
 
 h4 {
-  font-family: "Poppins", sans-serif;
-  font-size: 1.8em;
+  font-family: 'Poppins', sans-serif;
+  font-weight: 500;
+  font-size: 1.125em;
   margin: 20px 0;
 }
 
@@ -173,10 +173,15 @@ header {
   justify-content: flex-start;
 }
 
+/* NEWSLETTER SECTION */
 .newsletter {
-  background-color: #3d6218;
+  background-color: #2a423a;
   text-align: center;
   width: 100%;
+}
+
+.newsletter-div {
+  padding: 20px 10px;
 }
 
 .email form {
@@ -192,7 +197,7 @@ header {
 }
 
 .email form button {
-  background-color: rgba(0, 100, 0, 0.9);
+  background-color: #2a423a;
   border: none;
   box-shadow: 1px 1px #181818;
   color: #fff;
@@ -202,6 +207,7 @@ header {
   width: 275px;
 }
 
+/* FEATURES SECTION */
 .information {
   align-items: center;
   background-image: url("../assets/unplugged-retreat-features.jpg");
@@ -224,15 +230,16 @@ header {
 .info-item {
   align-items: center;
   display: flex;
-  flex-basis: 50%;
+  flex-basis: 65%;
   flex-flow: column wrap;
   justify-content: center;
-  width: 63%;
+  text-align: center;
   margin: 30px 0;
 }
 
+/* REVIEWS SECTION */
 .reviews {
-  background-color: #3d6218;
+  background-color: #2a423a;
   display: flex;
   justify-content: center;
   flex-flow: row wrap;
@@ -244,9 +251,23 @@ header {
 }
 
 /* ABOUT PAGE STYLE */
-.mission,
-.about-information {
-  background-color: #3d6218;
+.mission {
+  background-color: #2a423a;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-flow: row wrap;
+}
+
+.mission-content {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding-top: 20px;
+}
+
+.mission-content p {
+  width: 45%;
 }
 
 .about-information a {
@@ -254,9 +275,17 @@ header {
   text-decoration: none;
 }
 
+.contact-section {
+  background-color: #2a423a;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-flow: row wrap;
+}
+
 /* FAQS */
 .questions {
-  background-color: #3d6218;
+  background-color: #2a423a;
 }
 
 /* FOOTER */
@@ -318,12 +347,28 @@ footer h4 {
    ========================================================================== */
 
 @media only screen and (min-width: 760px) {
+  h1 {
+    font-size: 3em;
+  }
+
+  h2 {
+    font-size: 2.5em;
+  }
+
+  h3 {
+    font-size: 2em;
+  }
+
+  h4 {
+    font-size: 1.8em;
+  }
+
   .section-container {
     padding: 60px 15px;
   }
 
   .content-wrapper {
-    max-width: 960px;
+    width: 90%;
     align-items: center;
     display: flex;
     flex-flow: row wrap;
@@ -365,7 +410,6 @@ footer h4 {
   }
 
   .info-item p {
-    text-align: center;
     width: 250px;
   }
 
@@ -376,13 +420,9 @@ footer h4 {
   .reviews article {
     display: flex;
     justify-content: space-between;
-    background-color: #3d6218;
+    background-color: #2a423a;
     align-items: center;
     flex-flow: row nowrap;
-  }
-
-  .mission h2 {
-    width: 70%;
   }
 
   .about-text {
