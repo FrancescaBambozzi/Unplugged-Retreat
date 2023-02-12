@@ -74,9 +74,10 @@ h1 {
 
 h2 {
   font-family: "Poppins", sans-serif;
-  font-size: 2.25em;
+  font-size: 3em;
   font-weight: 500;
   line-height: 1.333;
+  width: 95%;
 }
 
 h3 {
@@ -84,6 +85,12 @@ h3 {
   font-weight: 500;
   font-size: 1.5em;
   line-height: 1.25;
+  margin: 20px 0;
+}
+
+h4 {
+  font-family: "Poppins", sans-serif;
+  font-size: 1.8em;
   margin: 20px 0;
 }
 
@@ -95,8 +102,12 @@ ul li {
 }
 
 p {
+<<<<<<< HEAD
   font-family: "Open Sans", sans-serif;
   font-size: 18px;
+=======
+  font-size: 1.25em;
+>>>>>>> f222b3f (css changes)
 }
 
 /* HEADER */
@@ -166,7 +177,7 @@ header {
   justify-content: flex-start;
 }
 
-.newsletter {
+#newsletter {
   background-color: #3d6218;
   text-align: center;
   width: 100%;
@@ -314,9 +325,13 @@ footer h4 {
             TABLETS & DESKTOP LAYOUT
    ========================================================================== */
 
+<<<<<<< HEAD
 @media only screen and (min-width: 760px) {
+=======
+@media only screen and (min-width: 768px) {
+>>>>>>> f222b3f (css changes)
   .section-container {
-    padding: 60px 0;
+    padding: 60px 15px;
   }
 
   .content-wrapper {
@@ -335,6 +350,27 @@ footer h4 {
     text-align: left;
   }
 
+  #newsletter {
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: center;
+  }
+
+  .content-wrapper {
+    align-items: center;
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-evenly;
+  }
+
+  .content-wrapper .div {
+    width: 40%;
+  }
+
+  .text-content {
+    text-align: left;
+  }
+
   .email form {
     align-items: center;
     display: flex;
@@ -342,21 +378,62 @@ footer h4 {
     justify-content: center;
   }
 
+<<<<<<< HEAD
+=======
+  .information {
+    align-items: center;
+    background-color: #000;
+    display: flex;
+    flex-flow: column wrap;
+    justify-content: center;
+    width: 100%;
+  }
+
+  .info-items-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-flow: row wrap;
+    width: 60%;
+  }
+
+>>>>>>> f222b3f (css changes)
   .info-item {
     flex-basis: 33%;
   }
 
   .info-item p {
+    text-align: center;
     width: 250px;
-    text-align: justify;
   }
 
-  .previous {
+  .previous figure {
+    width: 35%;
+  }
+
+  .previous article {
+    display: flex;
+    justify-content: space-around;
     background-color: #3d6218;
     align-items: center;
+    flex-flow: row wrap;
+    width: 80%;
+  }
+
+  .mission h2 {
+    width: 70%;
+  }
+
+  .about-text {
     display: flex;
-    flex-flow: column nowrap;
-    justify-content: center;
+    flex-flow: row nowrap;
+    justify-content: space-between;
+    align-items: center;
+    width: 70%;
+  }
+
+  .about-text p {
+    padding: 20px;
   }
 
   .about-information {
@@ -376,10 +453,31 @@ footer h4 {
     width: 100%;
   }
 
+<<<<<<< HEAD
   footer {
     align-items: center;
     display: flex;
     flex-flow: column wrap;
     justify-content: center;
+=======
+  .contact-section {
+    background-color: #3d6218;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-flow: row wrap;
+    padding: 60px 0;
+  }
+
+  .contact-section h2 {
+    width: 70%;
+  }
+
+  .contact-content {
+    display: flex;
+    justify-content: space-around;
+    align-items: flex-start;
+    width: 70%;
+>>>>>>> f222b3f (css changes)
   }
 }
