@@ -116,13 +116,6 @@ p {
 }
 
 /* HEADER */
-header {
-  background-image: url("../img/rob-mulally-oacHEtIlXsA-unsplash.jpg");
-  background-size: cover;
-  background-position: center;
-  height: "100%";
-}
-
 #logo {
   height: 50px;
   width: 50px;
@@ -166,8 +159,13 @@ header {
 
 /* HOMEPAGE STYLE */
 .hero {
-  height: 400px;
-  position: relative;
+  background-image: url("../assets/jake-melara-30679-unsplash.jpg");
+  background-size: cover;
+  background-position: center;
+  min-height: 600px;
+  display: flex;
+  justify-content: flex-start;
+  flex-flow: row wrap;
 }
 
 .hero img {
