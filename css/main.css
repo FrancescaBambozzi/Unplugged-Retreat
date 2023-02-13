@@ -69,11 +69,10 @@ body {
 /* TYPOGRAPHY */
 h1 {
   font-family: "Poppins", sans-serif;
-  font-size: 3em;
+  font-size: 2.5em;
   font-weight: 500;
-  line-height: 1;
-  margin: 0;
-  padding: 40px 20px;
+  line-height: 1.2;
+  margin: 80px 15px;
 }
 
 h2 {
@@ -116,11 +115,6 @@ p {
 }
 
 /* HEADER */
-#logo {
-  height: 50px;
-  width: 50px;
-}
-
 .nav {
   background-color: #181818;
   overflow: hidden;
@@ -331,7 +325,14 @@ footer h4 {
 @media only screen and (min-width: 760px) {
   h1 {
     font-size: 3em;
+    font-weight: 500;
+    margin: 150px 30px;
   }
+
+  .header-title {
+    width: 30%;
+  }
+  
 
   h2 {
     font-size: 2.5em;
