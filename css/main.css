@@ -186,8 +186,9 @@ p {
 }
 
 .email form {
+  align-items: center;
   display: flex;
-  flex-flow: row wrap;
+  flex-flow: column nowrap;
   justify-content: center;
 }
 
@@ -357,7 +358,7 @@ footer h4 {
   .newsletter-content {
     display: flex;
     flex-flow: row nowrap;
-    justify-content: space-between;
+    justify-content: space-around;
     align-items: flex-start;
   }
 
@@ -372,14 +373,7 @@ footer h4 {
   .text-content {
     text-align: left;
   }
-
-  .email form {
-    align-items: center;
-    display: flex;
-    flex-flow: column wrap;
-    justify-content: center;
-  }
-
+  
   .info-item {
     flex-basis: 33%;
   }
