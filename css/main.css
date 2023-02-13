@@ -94,11 +94,16 @@ h4 {
   margin: 20px 0;
 }
 
+ul {
+  padding: 0;
+}
+
 ul li {
   font-family: "Open Sans", sans-serif;
   font-size: 18px;
   list-style: none;
   text-decoration: none;
+  padding: 10px;
 }
 
 p {
@@ -305,10 +310,10 @@ footer {
   justify-content: center;
 }
 
-.contact {
+.contact-div {
   align-items: center;
   display: flex;
-  flex-flow: row wrap;
+  flex-flow: column wrap;
   justify-content: center;
 }
 
@@ -316,39 +321,15 @@ footer h4 {
   margin: 0;
 }
 
-.contact img {
-  height: 30px;
-  width: 30px;
+.contact-div img {
+  height: 35px;
+  width: 35px;
 }
 
-.contact ul li {
+.contact-div ul li {
   float: left;
-  padding-left: 0;
 }
 
-.contacts ul {
-  padding-left: 0;
-}
-
-.contacts ul li {
-  padding: 10px;
-}
-
-.socials ul {
-  padding-left: 0;
-}
-
-.socials ul li {
-  padding: 10px;
-}
-
-.copyright ul {
-  padding-left: 0;
-}
-
-.copyright ul li {
-  padding: 10px;
-}
 
 /* ==========================================================================
             TABLETS & DESKTOP LAYOUT
