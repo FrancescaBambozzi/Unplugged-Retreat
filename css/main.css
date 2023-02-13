@@ -410,13 +410,17 @@ footer h4 {
     width: 250px;
   }
 
-  .reviews figure {
-    width: 60%;
+  .reviews article figure {
+    width: 30%;
+  }
+
+  .reviews article div {
+    width: 30%;
   }
 
   .reviews article {
     display: flex;
-    justify-content: space-between;
+    justify-content: space-evenly;
     background-color: #2a423a;
     align-items: center;
     flex-flow: row nowrap;
