@@ -256,37 +256,23 @@ header {
 }
 
 /* ABOUT PAGE STYLE */
-.mission {
+.mission-section {
   background-color: #2a423a;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  flex-flow: row wrap;
 }
 
 .mission-content {
+  align-items: center;
   display: flex;
   flex-flow: column nowrap;
   justify-content: space-between;
-  align-items: center;
-  padding: 20px;
-}
-
-.mission-content p {
-  width: 100%;
-}
-
-.about-information a {
-  color: #fff;
-  text-decoration: none;
 }
 
 .contact-section {
+  align-items: center;
   background-color: #2a423a;
   display: flex;
-  justify-content: center;
-  align-items: center;
-  flex-flow: row wrap;
+  justify-content: space-between;
+  flex-flow: column nowrap;
 }
 
 .contact-content {
@@ -299,6 +285,14 @@ header {
 /* FAQS */
 .questions {
   background-color: #2a423a;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-flow: row wrap;
+}
+
+.question {
+  padding: 10px;
 }
 
 /* FOOTER */
@@ -357,11 +351,11 @@ footer h4 {
   }
 
   .content-wrapper {
-    width: 90%;
+    max-width: 960px;
     align-items: center;
     display: flex;
     flex-flow: row wrap;
-    justify-content: space-around;
+    justify-content: space-between;
   }
 
   .newsletter-div {
@@ -412,11 +406,11 @@ footer h4 {
     flex-flow: row nowrap;
     justify-content: space-around;
     align-items: center;
-    padding: 20px;
   }
   
   .mission-content p {
-    width: 40%;
+    padding: 10px;
+    width: 50%;
   }
 
   .contact-content {
@@ -439,8 +433,8 @@ footer h4 {
     width: 100%;
   }
 
-  .about-information {
-    width: 100%;
+  .question {
+    flex-basis: 45%;
   }
 
   footer {
