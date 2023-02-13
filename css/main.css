@@ -198,7 +198,7 @@ p {
 }
 
 .email form button {
-  background-color: #2a423a;
+  background-color: #666;
   border: none;
   box-shadow: 1px 1px #181818;
   color: #fff;
@@ -330,7 +330,7 @@ footer h4 {
   }
 
   .header-title {
-    width: 30%;
+    width: 40%;
   }
   
 
